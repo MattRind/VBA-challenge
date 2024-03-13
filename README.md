@@ -1,0 +1,7 @@
+# VBA-challenge
+Even though I haven’t coded since the mid-80s in college with BASIC and FORTRAN, I was able to the write the code for this assignment, in addition to the lessons from the Bootcamp, based on a logic structure and use of counters that I remembered long ago. The following syntax and formatting for writing VBA code was more advanced, and required borrowing from the knowledge of Access databases used in my job or what I taught myself from recent Google searches:
+•	Worksheets function and related Activate method
+•	way to determine last row of data in a spreadsheet: Range("A1").End(xlDown).Row
+•	Number and column formatting, e.g, "#.00%" and Autofit method
+•	WorksheetFunction method such as .Max(Range( )) – but I abandoned using this because I couldn’t figure out to connect the ticker to the solution the method would return. For example, I wanted not only find the max in a range, but find the value of location (row, column) of the cell the max is located. The value of the row would be used to identify the corresponding ticker. Also, I learned these worksheet functions do not work when the data is of general format, meaning more code would be needed to convert the data – too complex.
+To write the code for this assignment, some classwork was a good starting point but I learned by trial and error, beginning with the alphabetical_testing file, and using debug.print very often. I actually made it hard on myself as I wrote code to find maximums among all 6 sheets of data, stock tickers from A to F, and displayed all of this data only on Sheet A.
